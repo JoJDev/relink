@@ -1,0 +1,18 @@
+body {
+    padding-bottom: 5em;
+    min-height: 100vh;
+}
+
+main{
+    background-color: azure;
+    padding-bottom: 2em;
+}
+
+main>div{
+    background-color: white;
+    padding: 0;
+}
+
+footer {
+    padding: 2em 1em;
+}
