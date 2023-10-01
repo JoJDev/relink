@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relink - redireccionador de enlaces</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./../../../static/relink_app/style.css" />
+  </head>
+
+  <body class="position-relative">
+    <header id="top" class="bg-light sticky-top">
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid align-items-baseline">
+          <a class="navbar-brand justify-content-center fs-2" href="/">Re<span class="text-primary text-decoration-underline">link</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse justify-content-end pe-md-4" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#docs">Docs</a>
+              <a class="nav-link" href="#credits">Creditos</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-fluid">
+      <div class="px-4 pt-5 my-5 text-center border-bottom">
+        <h1 class="display-4 fw-bold">Re<span class="text-primary text-decoration-underline">link</span></h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">
+            Re<span class="text-primary text-decoration-underline">link</span> es un sitio web para crear URLs de redireccionamiento, permite crear tus propias URLs y personalizarlas para que sean cortas y faciles de recordar, y que estas redireccionen a otro enlace en especifico para mejorar su presentaci&oacute;n y mantenimiento.
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+            <a href="https://github.com/JoJDev/relink" target="_blank" class="btn btn-primary btn-lg px-4 me-sm-3">Github Repo</a>
+            <!-- <a href="" class="btn btn-outline-secondary btn-lg px-4">Docs</a> -->
+          </div>
+        </div>
+        <div class="overflow-hidden" style="max-height: 30vh; min-height: 70px;">
+          <!--  <div class="container px-5">
+          <img src="bootstrap-docs.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image"
+            width="700" height="500" loading="lazy">
+        </div>  -->
+        </div>
+      </div>
+
+      <article class="container">
+        <sub>version: 1.0.0 - prototipo</sub>
+      </article>
+
+      <article class="container">
+        <h2 class="px-4 py-2">&iquest;Para qu&eacute; sirve&quest;</h2>
+        <p>
+          Re<span class="text-primary text-decoration-underline">link</span> es especialmente util para los siguientes casos:
+        </p>
+        <ul>
+          <li>
+            <strong>Actualizar URLs:</strong>Para no tener que repostear un link si este dejase de estar disponible o estuviese roto el enlace.
+          </li>
+          <li>
+            <strong>Facil de compartir:</strong>Al ser corto y personalizable, es facil de compartir con otros y de recordar
+          </li>
+          <li>
+            <strong>Tener tu dominio en el URL:</strong> Permitir que varios nombres de dominio pertenecientes al mismo propietario hagan referencia a un único sitio web.
+          </li>
+          <li>
+            <strong>Publicidad:</strong> Para promocionar tu sitio web y/o marca al tener que pasar por tu redireccionador de URL.
+          </li>
+          <li>
+            <strong>Navegación:</strong> Para guiar la navegación dentro y fuera de un sitio web.
+          </li>
+          <li>
+            <strong>Protección de la privacidad:</strong> Para proteger la privacidad tanto del usuario como del admin, al ocultar datos del URL destino.
+          </li>
+        </ul>
+      </article>
+      <article class="container">
+        <h3 class="px-4 py-2">Herramientas usadas</h3>
+        <ul>
+          <li>Python 3.10.9</li>
+          <li>Django 4.2.5</li>
+          <li>Django Bootstrap5 23.3</li>
+          <li>SQLite</li>
+        </ul>
+        <section class="px-4 py-2">
+          <h4 >Modo de uso</h4>
+          <p>Una vez instaladas sus dependencias (requirements.txt) e implementadas las migraciones y un superusuario (Instalaci&oacute;n de un proyecto Django promedio), puedes ir al <a href="/admin">admin page</a> por defecto y empezar a crear y modificar tus enlaces.</p>
+        </section>
+      </article>
+
+      <hr />
+      <article id="docs" class="container">
+        <h2 class="px-4 py-2">Documentaci&oacute;n</h2>
+        <section>
+          <header>
+            <h3>Instalaci&oacute;n</h3>
+          </header>
+          <p>ToDo</p>
+        </section>
+
+        <section>
+          <header>
+            <h3>Crear tus URLs</h3>
+          </header>
+          <p>ToDo</p>
+        </section>
+      </article>
+
+      <hr />
+      <article id="credits" class="container">
+        <h2 class="px-4 py-2">Creditos</h2>
+        <p>ToDo</p>
+      </article>
+    </main>
+
+    <footer class="bg-dark text-bg-secondary position-absolute bottom-0 container-fluid">
+      <div class="text-center">
+        Re<span class="text-primary text-decoration-underline">link</span> creado por <a href="http://github.com/jojdev">JoJ Dev</a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+{% load django_bootstrap5 %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {% block title %}
+        Relink - redireccionador de URL
+      {% endblock %}
+    </title>
+
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <link rel="stylesheet" href="{% static 'relink_app/style.css' %}" />
+  </head>
+  <body class="position-relative">
+    <header id="top" class="bg-light sticky-top">
+      {% block header %}
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid align-items-baseline">
+            <a class="navbar-brand justify-content-center fs-2" href="/">Re<span class="text-primary text-decoration-underline">link</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse justify-content-end pe-md-4" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                {% comment %} <a class="nav-link" href="#docs">Docs</a>
+                <a class="nav-link" href="#credits">Creditos</a> {% endcomment %}
+              </div>
+            </div>
+          </div>
+        </nav>
+      {% endblock %}
+    </header>
+
+    <main>
+      {% block content %}
+
+      {% endblock %}
+    </main>
+
+    <footer class="bg-dark text-bg-secondary position-absolute bottom-0 container-fluid">
+      {% block footer %}
+        <div class="text-center">
+          Re<span class="text-primary text-decoration-underline">link</span> creado por <a href="http://github.com/jojdev">JoJ Dev</a>
+        </div>
+      {% endblock %}
+    </footer>
+  </body>
+</html>
