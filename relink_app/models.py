@@ -26,11 +26,10 @@ l = Link.objects.all()
     """
 
     def __str__(self):
-        url_no_scheme: str = self.url[self.url.find("://")+3 :]
         return (
-            self.name + ": " + (url_no_scheme
-            if len(url_no_scheme) < 10
-            else url_no_scheme[:10])
+            self.name + " (" + (self.slug
+            if len(self.slug) < 10
+            else self.slug[:10]) + ")"
         )
 
         
