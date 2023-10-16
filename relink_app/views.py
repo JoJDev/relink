@@ -26,6 +26,7 @@ def relink(request, slug_url: str = ""):
             "seconds": link.seconds_wait,
             "auto_redirect": link.auto_redirect,
             "url": link.url,
+            "text_link": link.text_link,
         }
 
         return render(request, "relink_app/relink.html", context=context)

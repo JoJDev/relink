@@ -3,7 +3,11 @@
 
 {% block content %}
   <article class="container-fluid d-flex flex-column justify-content-center align-items-center text-center" style="min-height: 70vh;">
-    <h2 class="my-4">Enlace proporcionado por Re<span class="text-primary text-decoration-underline">link</span></h2>
+    {% if text_link %}
+      <h2 class="my-4">{{ text_link|capfirst}}</h2>
+    {% else %}
+      <h2 class="my-4">Enlace proporcionado por JoJDev y Re<span class="text-primary text-decoration-underline">link</span></h2>
+    {% endif %}
     {% if seconds > 0 %}
       {% if auto_redirect %}
         <p>Espera a que termine el tiempo para ser redirigido al url</p>
