@@ -2,11 +2,11 @@
 {% load static %}
 
 {% block content %}
-  <article class="container-fluid d-flex flex-column justify-content-center align-items-center text-center" style="min-height: 70vh;">
+  <article class="container-fluid d-flex flex-column justify-content-center align-items-center text-center" style="min-height: calc(100vh - 80px - 74px) !important;">
     {% if text_link %}
-      <h2 class="my-4">{{ text_link|capfirst}}</h2>
+      <h2 class="my-4">{{ text_link|capfirst }}</h2>
     {% else %}
-      <h2 class="my-4">Enlace proporcionado por JoJDev y Re<span class="text-primary text-decoration-underline">link</span></h2>
+      <h2 class="my-4">Enlace proporcionado por JoJDev y <a href="/" class="text-dark text-decoration-none">Re<span class="text-primary text-decoration-underline">link</span></a></h2>
     {% endif %}
     {% if seconds > 0 %}
       {% if auto_redirect %}
